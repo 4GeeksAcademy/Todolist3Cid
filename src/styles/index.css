@@ -1,11 +1,90 @@
-/* 
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+body {
+  font-family: 'Aladin', cursive;
+  background-color: #fef5e7;
+  text-align: center;
+}
 
-*/
+.todo-container {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  color: #d35400;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+input {
+  padding: 8px;
+  border: 2px solid #d35400;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-btn {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #e67e22;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  background: #fef9e7;
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.delete {
+  cursor: pointer;
+  color: red;
+  font-size: 18px;
+}
+.remove-all-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: inherit; /* Hereda la fuente del contenedor */
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.remove-all-btn:hover {
+  background-color: #d32f2f;
+}
+
+.remove-all-btn:focus {
+  outline: none;
+}
+
